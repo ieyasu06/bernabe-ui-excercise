@@ -1,0 +1,28 @@
+<input type="text" name="sentence" id="sentence" value="">
+<button type="button" onclick="reverseme()">Reverse</button>
+<div id="rsentence"></div>
+
+<script type="text/javascript">
+
+var sentence;
+
+function reverseme()
+{
+	sentence = document.getElementById('sentence').value;
+	var arrs= sentence.split(" ");
+
+	for(i=0;i<arrs.length;i++)
+	{
+		if(i%2>0)
+		{
+			var wordreverse= arrs[i].split("");
+			wordreverse.reverse();
+			
+			arrs[i]=wordreverse.join("");
+		}
+	}
+
+	document.getElementById("rsentence").innerHTML=arrs.join(" ");
+
+}
+</script>
