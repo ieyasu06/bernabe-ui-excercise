@@ -1,0 +1,203 @@
+
+<style type="text/css">
+
+.notif-header
+{
+	background-color: #313b44;
+	height: 35px;
+	width: 380px;
+	padding: 13px 10px 7px 10px;
+}
+.notif-holder{
+	height: 1000px;
+	width: 400px;
+	background-color: #e9eff1;
+}
+
+.notif{
+	position: relative;
+}
+
+.profile-img {
+    border-radius: 50%;
+    float: left;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.stat-label {
+    position: absolute;
+    bottom: 0px;
+    right: -2px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+    border: 2px solid white;
+    border-radius: 80%;
+    width: 8px;
+    height: 8px;
+}
+
+.notif-content
+{
+	padding-left:20px;
+	display: inline-block;
+}
+
+.notif-box{
+	padding: 25px 20px 25px 30px;
+}
+
+.offline{
+	background-color: #e9597e;
+}
+
+.online
+{
+	background-color: #33c555;
+}
+
+
+.busy
+{
+	background-color: #f49d00;
+	font-family: sans-serif;
+}
+
+.notif-title{
+	color: #5b6a79;
+	margin-bottom: 10px;
+	margin-top: 1px;
+}
+
+.notif-preview{
+	color: #a3afbb;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 278px;
+    font-size: 13px;
+
+}
+
+body{
+	font-family: sans-serif;
+}
+ul{
+	background-color: #e9eff1;
+	list-style-type: none;
+	padding: 0;
+	border: 1px solid #dce4ea;
+	margin: 0;
+}
+
+li:first-child  a > div, a:focus > div  {
+  background-color: #f9fafb !important;
+}
+
+/*a:focus > div {
+  background-color: #f9fafb;
+}*/
+
+a:not(:focus) > div{
+	background-color: #e9eff1 !important;
+}
+
+
+li{
+	/*padding: 25px 20px 25px 30px;*/
+    background-color: #e9eff1;
+    border-bottom: 1px solid #dce4ea;
+}
+
+i {
+	border: solid #a8b2bb;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.put-right{
+	float: right;
+}
+.drop-down-btn{
+	border: 1px solid #a8b2bb;
+	border-radius: 80%;
+    padding: 8px;
+}
+
+</style>
+
+<div class="notif-holder">
+	<div class="notif-header">
+		<div class="put-right drop-down-btn"><i class="arrow down"></i></div>
+	</div>
+	<ul>
+		<li class="notif">
+			<a href="#">
+				<div class="notif-box">
+					<div style="background-image:url('https://via.placeholder.com/50x50')" class="profile-img"><span class="stat-label offline">&nbsp;</span></div>
+					
+					<div class="notif-content">
+						<h4 class="notif-title">name</h4>
+						<div class="notif-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+					</div>
+				</div>
+			</a>
+
+		</li>
+
+		<li class="notif">
+			<a href="#">
+				<div class="notif-box">
+					<div style="background-image:url('https://via.placeholder.com/50x50')" class="profile-img"><span class="stat-label online">&nbsp;</span></div>
+					
+					<div class="notif-content">
+						<h4 class="notif-title">name</h4>
+						<div class="notif-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+					</div>
+				</div>
+			</a>
+		</li>
+
+		<li class="notif">
+			<a href="#">
+				<div class="notif-box">
+					<div style="background-image:url('https://via.placeholder.com/50x50')" class="profile-img"><span class="stat-label busy">&nbsp;</span></div>
+					
+					<div class="notif-content">
+						<h4 class="notif-title">name</h4>
+						<div class="notif-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+					</div>
+				</div>
+			</a>
+
+		</li>
+
+		<li class="notif">
+			<a href="#">
+				<div class="notif-box">
+					<div style="background-image:url('https://via.placeholder.com/50x50')" class="profile-img"><span class="stat-label offline">&nbsp;</span></div>
+					
+					<div class="notif-content">
+						<h4 class="notif-title">name</h4>
+						<div class="notif-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+					</div>
+				</div>
+			</a>
+		</li>
+
+	</ul>
+</div>
